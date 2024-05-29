@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-
-</head>
+<html>
 <body>
-    <h1>Teste Chatbot QA</h1>
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
