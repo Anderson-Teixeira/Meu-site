@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://sieg--qa.sandbox.my.site.com;">
 </head>
 <body>
     <h1>Teste Chatbot QA</h1>
@@ -24,7 +25,18 @@
                 console.error('Error loading Embedded Messaging: ', err);
             }
         }
+
+        // Verificar se embeddedservice_bootstrap está disponível
+        function checkBootstrap() {
+            if (typeof embeddedservice_bootstrap !== 'undefined') {
+                initEmbeddedMessaging();
+            } else {
+                setTimeout(checkBootstrap, 100); // Tentar novamente após 100ms
+            }
+        }
+
+        window.onload = checkBootstrap;
     </script>
-    <script type='text/javascript' src='https://sieg--qa.sandbox.my.site.com/ESWTesteBotSIEG1713470058694/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' src='https://sieg--qa.sandbox.my.site.com/ESWTesteBotSIEG1713470058694/assets/js/bootstrap.min.js'></script>
 </body>
 </html>
