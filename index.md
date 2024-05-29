@@ -1,4 +1,4 @@
-<html>
+
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -18,4 +18,4 @@
 	};
 </script>
 <script type='text/javascript' src='https://sieg--qa.sandbox.my.site.com/ESWTesteBotSIEG1713470058694/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-</html>
+
