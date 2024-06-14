@@ -5,13 +5,13 @@
             window.addEventListener("onEmbeddedMessagingReady", e => {
             // Envio de dados para o Salesforce
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"IdContato" : "003Dy00000vmv09IAA"});
+	    embedded_svc.settings.smallCompanyLogoImgURL = "https://sieg--qa--c.sandbox.vf.force.com/resource/1710790451000/LogoSI?";
             // Exemplo de como preencher mais de uma variável
             // ({"IdContato" : "8675309", "Order_Number" : "11098324"});
         });
         
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-                        embedded_svc.settings.smallCompanyLogoImgURL = "https://sieg--qa--c.sandbox.vf.force.com/resource/1710790451000/LogoSI?";
 
 			embeddedservice_bootstrap.init(
 				'00DDy0000008qC3',
