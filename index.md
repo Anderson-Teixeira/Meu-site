@@ -11,6 +11,7 @@
         
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+                        embedded_svc.settings.smallCompanyLogoImgURL = "https://sieg--qa--c.sandbox.vf.force.com/resource/1710790451000/LogoSI?";
 
 			embeddedservice_bootstrap.init(
 				'00DDy0000008qC3',
